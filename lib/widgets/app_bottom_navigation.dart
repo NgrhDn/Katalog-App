@@ -17,13 +17,10 @@ class AppBottomNavigation extends StatelessWidget {
       onTap: onChanged,
       items: const [
         BottomNavigationBarItem(
-          icon: Icon(Icons.grid_view),
+          icon: Icon(Icons.shopping_bag),
           label: 'Produk',
         ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.table_chart),
-          label: 'Tabel',
-        ),
+        BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Akun'),
       ],
     );
   }
