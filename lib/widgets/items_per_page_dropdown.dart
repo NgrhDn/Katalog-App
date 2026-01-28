@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../controllers/product_controller.dart';
 
-// Widget: Dropdown jumlah item per halaman
 class ItemsPerPageDropdown extends StatelessWidget {
   final ProductController controller;
   final VoidCallback onUpdate;

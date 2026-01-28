@@ -4,7 +4,6 @@ import '../controllers/product_controller.dart';
 import 'product_card.dart';
 import 'items_per_page_dropdown.dart';
 
-// View: Tampilan grid produk dengan pagination
 class ProductGrid extends StatefulWidget {
   final List<Product> products;
 
@@ -29,7 +28,6 @@ class _ProductGridState extends State<ProductGrid> {
 
     return Column(
       children: [
-        // Header dengan dropdown
         Padding(
           padding: const EdgeInsets.all(12),
           child: Row(
@@ -46,8 +44,6 @@ class _ProductGridState extends State<ProductGrid> {
             ],
           ),
         ),
-
-        // Grid produk
         Expanded(
           child: LayoutBuilder(
             builder: (context, size) {
