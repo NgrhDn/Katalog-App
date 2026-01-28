@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../models/product.dart';
 import '../controllers/product_controller.dart';
 import 'product_card.dart';
-import 'items_per_page_dropdown.dart';
 
 class ProductGrid extends StatefulWidget {
   final List<Product> products;
@@ -30,18 +29,9 @@ class _ProductGridState extends State<ProductGrid> {
       children: [
         Padding(
           padding: const EdgeInsets.all(12),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                'Total ${controller.allProducts.length} produk',
-                style: Theme.of(context).textTheme.titleMedium,
-              ),
-              ItemsPerPageDropdown(
-                controller: controller,
-                onUpdate: () => setState(() {}),
-              ),
-            ],
+          child: Text(
+            'Total ${currentProducts.length} produk',
+            style: Theme.of(context).textTheme.titleMedium,
           ),
         ),
         Expanded(
